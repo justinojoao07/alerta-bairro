@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mapa de risco | AlertaBairro</title>
+  <meta name="description" content="AlertaBairro: alerta comunitário de enchentes, rua a rua, para o Jardim Pantanal e região.">
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+  <header>
+    <div class="barra">
+      <a class="logo" href="index.html"><img src="assets/img/logo.svg" alt="" width="32" height="32">AlertaBairro</a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">&#9776;</button>
+      <nav id="menu-principal" aria-label="Menu principal"><ul><li><a href="index.html">Início</a></li><li><a href="sobre.html">Sobre</a></li><li><a href="mapa-risco.html" aria-current="page">Mapa de risco</a></li><li><a href="relatar.html">Relatar</a></li><li><a href="faq.html">FAQ</a></li><li><a href="integrantes.html">Integrantes</a></li><li><a href="contato.html">Contato</a></li></ul></nav>
+    </div>
+  </header>
+  <main id="conteudo" class="container">
+    <h1>Mapa de risco</h1>
+    <p>Filtre os pontos por bairro e por nível de risco. Dados fictícios de demonstração.</p>
+    <div class="filtros">
+      <div><label for="filtro-bairro">Bairro</label><select id="filtro-bairro"><option value="">Todos</option></select></div>
+      <div><label for="filtro-risco">Nível de risco</label><select id="filtro-risco"><option value="">Todos</option><option>BAIXO</option><option>MÉDIO</option><option>ALTO</option><option>CRÍTICO</option></select></div>
+    </div>
+    <p id="contagem" role="status" aria-live="polite"></p>
+    <section id="lista-pontos" class="grade"></section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>AlertaBairro · Global Solution 2026/2 · CitizenTech · FIAP. Protótipo acadêmico: os dados de risco exibidos são fictícios.</p>
+      <p>Em emergência, ligue 199 (Defesa Civil) ou 193 (Bombeiros).</p>
+    </div>
+  </footer>
+</body>
+</html>
