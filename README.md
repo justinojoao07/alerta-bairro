@@ -19,6 +19,7 @@ README.md
 | Nome completo | RM | Turma | GitHub | LinkedIn |
 |---|---|---|---|---|
 | João Justino | 574645 | 1TDSPA | https://github.com/justinojoao07 | https://www.linkedin.com/joão-justino-profile|
+| Matheus Setra da SIlva | 575352 | 1TDSPA | https://github.com/ogsxtra | https://www.linkedin.com/in/matheus-setra-b24444360/|
 
 ## Imagens do projeto
 ![Logo](assets/img/logo.svg)
