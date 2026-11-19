@@ -1,39 +1,111 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Relatar alagamento | AlertaBairro</title>
-  <meta name="description" content="AlertaBairro: alerta comunitário de enchentes, rua a rua, para o Jardim Pantanal e região.">
-  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alerta Bairro: alerta comunitário de enchentes, rua a rua, para o Jardim Pantanal e região.">
+    <title>Relatar Alagamento | Alerta Bairro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+
+    <script src="js/menu.js" defer></script>
+    <script src="js/risco.js" defer></script>
 </head>
 <body>
-  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
-  <header>
-    <div class="barra">
-      <a class="logo" href="index.html"><img src="assets/img/logo.svg" alt="" width="32" height="32">AlertaBairro</a>
-      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">&#9776;</button>
-      <nav id="menu-principal" aria-label="Menu principal"><ul><li><a href="index.html">Início</a></li><li><a href="sobre.html">Sobre</a></li><li><a href="mapa-risco.html">Mapa de risco</a></li><li><a href="relatar.html" aria-current="page">Relatar</a></li><li><a href="faq.html">FAQ</a></li><li><a href="integrantes.html">Integrantes</a></li><li><a href="contato.html">Contato</a></li></ul></nav>
-    </div>
-  </header>
-  <main id="conteudo" class="container">
-    <h1>Relatar alagamento</h1>
-    <p>Simule o envio de um relato. O sistema calcula o risco e mostra a orientação.</p>
-    <form id="form-relato" novalidate>
-      <label for="bairro">Bairro</label><select id="bairro" name="bairro"><option value="">Selecione</option></select>
-      <label for="ponto">Ponto de referência</label><input id="ponto" name="ponto" type="text" placeholder="Ex.: perto da escola">
-      <fieldset><legend>Nível da água</legend><label class="opcao"><input type="radio" name="nivel" value="0">0 · Seco</label><label class="opcao"><input type="radio" name="nivel" value="1">1 · Poça</label><label class="opcao"><input type="radio" name="nivel" value="2">2 · Água na calçada</label><label class="opcao"><input type="radio" name="nivel" value="3">3 · Água na rua</label><label class="opcao"><input type="radio" name="nivel" value="4">4 · Água invadiu casas</label></fieldset>
-      <label class="opcao"><input type="checkbox" name="chuva">Chuva forte agora (30 mm/h ou mais)</label>
-      <p><button class="botao" type="submit">Enviar relato</button></p>
-      <p id="resultado" class="aviso" role="status" aria-live="polite"></p>
-    </form>
-  </main>
-  <footer>
-    <div class="container">
-      <p>AlertaBairro · Global Solution 2026/2 · CitizenTech · FIAP. Protótipo acadêmico: os dados de risco exibidos são fictícios.</p>
-      <p>Em emergência, ligue 199 (Defesa Civil) ou 193 (Bombeiros).</p>
-    </div>
-  </footer>
+
+    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+            <a class="marca" href="index.html" aria-label="AlertaBairro - Página inicial">
+                <img src="assets/img/logo.svg" alt="" width="32" height="32">
+                AlertaBairro
+            </a>
+
+            <nav aria-label="Navegação principal">
+                <button id="botao-menu" class="hamburguer" type="button"
+                        aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul id="menu" class="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="mapa-risco.html">Mapa de Risco</a></li>
+                    <li><a href="relatar.html" aria-current="page">Relatar</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="integrantes.html">Quem Somos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo">
+        <!-- TÍTULO DA PÁGINA -->
+        <section class="secao container" aria-labelledby="titulo-pagina">
+            <h1 id="titulo-pagina">Relatar alagamento</h1>
+            <p>Simule o envio de um relato. O sistema calcula o risco e mostra a orientação.</p>
+
+            <form id="form-relato" novalidate>
+                <label for="bairro">Bairro</label>
+                <select id="bairro" name="bairro">
+                    <option value="">Selecione</option>
+                </select>
+
+                <label for="ponto">Ponto de referência</label>
+                <input id="ponto" name="ponto" type="text" placeholder="Ex.: perto da escola">
+
+                <fieldset>
+                    <legend>Nível da água</legend>
+                    <label class="opcao">
+                        <input type="radio" name="nivel" value="0">
+                        0 · Seco
+                    </label>
+
+                    <label class="opcao">
+                        <input type="radio" name="nivel" value="1">
+                        1 · Poça
+                    </label>
+
+                    <label class="opcao">
+                        <input type="radio" name="nivel" value="2">
+                        2 · Água na calçada
+                    </label>
+
+                    <label class="opcao">
+                        <input type="radio" name="nivel" value="3">
+                        3 · Água na rua
+                    </label>
+
+                    <label class="opcao">
+                        <input type="radio" name="nivel" value="4">
+                        4 · Água invadiu casas
+                    </label>
+                </fieldset>
+
+                <label class="opcao">
+                    <input type="checkbox" name="chuva">
+                    Chuva forte agora (30 mm/h ou mais)
+                </label>
+
+                <p>
+                    <button class="botao" type="submit">Enviar relato</button>
+                </p>
+                <p id="resultado" class="aviso" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <div class="container">
+            <p>Em emergência, ligue 199 (Defesa Civil) ou 193 (Bombeiros).</p>
+            <p class="copyright">&copy; 2026 - Alerta Bairro - Global Solution 2026/2 - CitizenTech FIAP. Protótipo acadêmico: os pontos de risco do mapa são fictícios.</p>
+        </div>
+    </footer>
+
 </body>
 </html>

@@ -9,7 +9,7 @@ HTML5 semântico, CSS3 (variáveis e media queries) e JavaScript puro. Sem frame
 ```
 index.html  sobre.html  faq.html  integrantes.html  contato.html
 mapa-risco.html  relatar.html
-css/style.css
+css/style.css  css/menu.css
 js/menu.js  js/contato.js  js/risco.js
 assets/img/
 README.md
@@ -28,14 +28,9 @@ README.md
 ## Imagens do projeto
 ![Logo](assets/img/logo.svg)
 
-Adicione aqui screenshots do site em 390x844, 768x1024 e 1440x900.
 
 ## Repositório
 https://github.com/justinojoao07/alerta-bairro
 
 ## Contato
-contato@alertabairro.example (email figurativo)
-
-## Uso de IA
-Claude Code - Esclarecimento de Duvidas.
-Lovable - Design das paginas.
+contato@alertabairro.example (email ficticio)

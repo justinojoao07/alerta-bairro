@@ -1,0 +1,119 @@
+/* ==========================================================================
+   AlertaBairro - cabeçalho e menu de navegação
+   --------------------------------------------------------------------------
+   ÍNDICE
+    1. Cabeçalho
+    2. Marca (logo)
+    3. Botão hambúrguer
+    4. Menu de links
+    5. Responsividade do menu
+   Usa as variáveis de cor definidas em css/style.css.
+   ========================================================================== */
+
+
+/* 1. CABEÇALHO
+   Faixa escura do topo. O conteúdo interno usa a classe .container (style.css). */
+.cabecalho {
+    background: var(--tinta);
+}
+
+/* Logo à esquerda e menu à direita. position: relative serve de
+   referência para o menu aberto no celular (seção 5). */
+.cabecalho-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+}
+
+
+/* 2. MARCA (LOGO) */
+.marca {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: #fff;
+    text-decoration: none;
+    font-family: Georgia, serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+
+/* 3. BOTÃO HAMBÚRGUER
+   Escondido no computador. Cada <span> do HTML vira uma das três barras. */
+.hamburguer {
+    display: none;
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    padding: .5rem .55rem;
+    cursor: pointer;
+}
+
+.hamburguer span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    margin: 4px 0;
+    background: #fff;
+    border-radius: 2px;
+}
+
+
+/* 4. MENU DE LINKS (computador): lista em linha */
+.menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: .5rem .7rem;
+    border-radius: 6px;
+}
+
+.menu a:hover {
+    background: var(--agua);
+}
+
+/* Página atual: destacada em amarelo (atributo aria-current no HTML) */
+.menu a[aria-current="page"] {
+    background: var(--amarelo);
+    color: var(--tinta);
+    font-weight: 700;
+}
+
+
+/* 5. RESPONSIVIDADE DO MENU
+   Até 900 px: aparece o hambúrguer e o menu vira uma lista vertical que
+   abre sob o cabeçalho. O js/menu.js adiciona a classe "aberto". */
+@media (max-width: 900px) {
+    .hamburguer {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        flex-direction: column;
+        background: var(--tinta);
+        padding: .4rem 1rem .8rem;
+    }
+
+    .menu.aberto {
+        display: flex;
+    }
+}
