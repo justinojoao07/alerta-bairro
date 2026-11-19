@@ -24,11 +24,6 @@ README.md
 | Matheus Lira Castro | 575094 | 1TDSPA | https://github.com/MatheusLira-31 | https://www.linkedin.com/in/matheusliracastro/|
 | Enzo de Carvalho Pescuma | 576536 | 1TDSPA | https://github.com/enzxcp | https://www.linkedin.com/in/enzo-de-carvalho-pescuma-29510a431/|
 
-
-## Imagens do projeto
-![Logo](assets/img/logo.svg)
-
-
 ## Repositório
 https://github.com/justinojoao07/alerta-bairro
 
