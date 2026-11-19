@@ -1,51 +1,118 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Integrantes | AlertaBairro</title>
-  <meta name="description" content="AlertaBairro: alerta comunitário de enchentes, rua a rua, para o Jardim Pantanal e região.">
-  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alerta Bairro: alerta comunitário de enchentes, rua a rua, para o Jardim Pantanal e região.">
+    <title>Quem Somos | Alerta Bairro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+
+    <script src="js/menu.js" defer></script>
 </head>
 <body>
-  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
-  <header>
-    <div class="barra">
-      <a class="logo" href="index.html"><img src="assets/img/logo.svg" alt="" width="32" height="32">AlertaBairro</a>
-      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">&#9776;</button>
-      <nav id="menu-principal" aria-label="Menu principal"><ul><li><a href="index.html">Início</a></li><li><a href="sobre.html">Sobre</a></li><li><a href="mapa-risco.html">Mapa de risco</a></li><li><a href="relatar.html">Relatar</a></li><li><a href="faq.html">FAQ</a></li><li><a href="integrantes.html" aria-current="page">Integrantes</a></li><li><a href="contato.html">Contato</a></li></ul></nav>
-    </div>
-  </header>
-  <main id="conteudo" class="container">
-    <section class="secao container" aria-label="Lista de integrantes">
-            <div class="grade-integrantes">
 
-                <!-- INTEGRANTE -->
-                <article class="integrante">
-                    <h2>João Victor Justino Santos de Souza</h2>
-                    <div class="foto-integrante">
-                        <img src="../img/IMG_JOAO_JUSTINO.png"
-                             alt="Foto do integrante João Victor." width="200" height="200">
-                    </div>
-                    
-                    <ul class="dados-integrante">
-                        <li><strong>RM:</strong> 574645</li>
-                        <li><strong>Turma:</strong> 1TDSPA</li>
-                    </ul>
+    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
 
-                    <ul class="links-integrante">
-                        <li><a href="https://www.linkedin.com/in/joão-justino-profile" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                        <li><a href="https://github.com/justinojoao07" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                    </ul>
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+            <a class="marca" href="index.html" aria-label="Alerta Bairro - Página inicial">
+                Alerta Bairro
+            </a>
+
+            <nav aria-label="Navegação principal">
+                <button id="botao-menu" class="hamburguer" type="button"
+                        aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul id="menu" class="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="mapa-risco.html">Mapa de Risco</a></li>
+                    <li><a href="relatar.html">Relatar</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="integrantes.html" aria-current="page">Quem Somos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo">
+        <!-- TÍTULO DA PÁGINA -->
+        <section class="secao container" aria-labelledby="titulo-pagina">
+            <h1 id="titulo-pagina">Quem somos</h1>
+            <p>Conheça a equipe responsável pelo Alerta Bairro.</p>
+        </section>
+
+        <!-- TROCAR: nomes, RMs, fotos e links de GitHub e LinkedIn pelos dados reais da equipe -->
+        <!-- EQUIPE -->
+        <section class="secao container" aria-labelledby="titulo-equipe">
+            <h2 id="titulo-equipe">Equipe</h2>
+            <div class="grade-cards">
+                <article class="cartao">
+                    <img class="avatar" src="img/IMG_JOAO_JUSTINO.png" alt="Foto de Integrante 1" width="96" height="96">
+                    <h2>João Justino</h2>
+                    <p>RM 574645 · Turma 1TDSPA</p>
+                    <p>
+                        <a href="https://github.com/justinojoao07" target="_blank" rel="noopener">GitHub de Integrante 1</a><br>
+                        <a href="https://www.linkedin.com/in/joão-justino-profile" target="_blank" rel="noopener">LinkedIn de Integrante 1</a>
+                    </p>
                 </article>
-  </main>
-  <footer>
-    <div class="container">
-      <p>AlertaBairro · Global Solution 2026/2 · CitizenTech · FIAP. Protótipo acadêmico: os dados de risco exibidos são fictícios.</p>
-      <p>Em emergência, ligue 199 (Defesa Civil) ou 193 (Bombeiros).</p>
-    </div>
-  </footer>
-  
+
+                <article class="cartao">
+                    <img class="avatar" src="assets/img/avatar.svg" alt="Foto de Integrante 2" width="96" height="96">
+                    <h2>Nome Completo 2</h2>
+                    <p>RM 000002 · Turma 1TDS</p>
+                    <p>
+                        <a href="https://github.com/" target="_blank" rel="noopener">GitHub de Integrante 2</a><br>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn de Integrante 2</a>
+                    </p>
+                </article>
+
+                <article class="cartao">
+                    <img class="avatar" src="assets/img/avatar.svg" alt="Foto de Integrante 3" width="96" height="96">
+                    <h2>Nome Completo 3</h2>
+                    <p>RM 000003 · Turma 1TDS</p>
+                    <p>
+                        <a href="https://github.com/" target="_blank" rel="noopener">GitHub de Integrante 3</a><br>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn de Integrante 3</a>
+                    </p>
+                </article>
+
+                <article class="cartao">
+                    <img class="avatar" src="assets/img/avatar.svg" alt="Foto de Integrante 4" width="96" height="96">
+                    <h2>Nome Completo 4</h2>
+                    <p>RM 000004 · Turma 1TDS</p>
+                    <p>
+                        <a href="https://github.com/" target="_blank" rel="noopener">GitHub de Integrante 4</a><br>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn de Integrante 4</a>
+                    </p>
+                </article>
+
+                <article class="cartao">
+                    <img class="avatar" src="assets/img/avatar.svg" alt="Foto de Integrante 5" width="96" height="96">
+                    <h2>Nome Completo 5</h2>
+                    <p>RM 000005 · Turma 1TDS</p>
+                    <p>
+                        <a href="https://github.com/" target="_blank" rel="noopener">GitHub de Integrante 5</a><br>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn de Integrante 5</a>
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <div class="container">
+            <p>Em emergência, ligue 199 (Defesa Civil) ou 193 (Bombeiros).</p>
+            <p class="copyright">&copy; 2026 - Alerta Bairro - Global Solution 2026/2 - CitizenTech FIAP. Protótipo acadêmico: os pontos de risco do mapa são fictícios.</p>
+        </div>
+    </footer>
+
 </body>
 </html>

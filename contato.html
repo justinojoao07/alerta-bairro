@@ -1,38 +1,86 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contato | AlertaBairro</title>
-  <meta name="description" content="AlertaBairro: alerta comunitário de enchentes, rua a rua, para o Jardim Pantanal e região.">
-  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alerta Bairro: alerta comunitário de enchentes, rua a rua, para o Jardim Pantanal e região.">
+    <title>Contato | Alerta Bairro</title>
+    <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+
+    <script src="js/menu.js" defer></script>
+    <script src="js/contato.js" defer></script>
 </head>
 <body>
-  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
-  <header>
-    <div class="barra">
-      <a class="logo" href="index.html"><img src="assets/img/logo.svg" alt="" width="32" height="32">AlertaBairro</a>
-      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">&#9776;</button>
-      <nav id="menu-principal" aria-label="Menu principal"><ul><li><a href="index.html">Início</a></li><li><a href="sobre.html">Sobre</a></li><li><a href="mapa-risco.html">Mapa de risco</a></li><li><a href="relatar.html">Relatar</a></li><li><a href="faq.html">FAQ</a></li><li><a href="integrantes.html">Integrantes</a></li><li><a href="contato.html" aria-current="page">Contato</a></li></ul></nav>
-    </div>
-  </header>
-  <main id="conteudo" class="container">
-    <h1>Contato</h1>
-    <form id="form-contato" novalidate>
-      <label for="nome">Nome</label><input id="nome" name="nome" type="text" autocomplete="name"><span class="erro" id="erro-nome"></span>
-      <label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email"><span class="erro" id="erro-email"></span>
-      <label for="assunto">Assunto</label><input id="assunto" name="assunto" type="text"><span class="erro" id="erro-assunto"></span>
-      <label for="mensagem">Mensagem</label><textarea id="mensagem" name="mensagem" rows="5"></textarea><span class="erro" id="erro-mensagem"></span>
-      <p><button class="botao" type="submit">Enviar mensagem</button></p>
-      <p id="aviso-form" class="aviso" role="status" aria-live="polite"></p>
-    </form>
-  </main>
-  <footer>
-    <div class="container">
-      <p>AlertaBairro · Global Solution 2026/2 · CitizenTech · FIAP. Protótipo acadêmico: os dados de risco exibidos são fictícios.</p>
-      <p>Em emergência, ligue 199 (Defesa Civil) ou 193 (Bombeiros).</p>
-    </div>
-  </footer>
+
+    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+            <a class="marca" href="index.html" aria-label="Alerta Bairro - Página inicial">
+                Alerta Bairro
+            </a>
+
+            <nav aria-label="Navegação principal">
+                <button id="botao-menu" class="hamburguer" type="button"
+                        aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul id="menu" class="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="mapa-risco.html">Mapa de Risco</a></li>
+                    <li><a href="relatar.html">Relatar</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="integrantes.html">Quem Somos</a></li>
+                    <li><a href="contato.html" aria-current="page">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo">
+        <!-- TÍTULO DA PÁGINA -->
+        <section class="secao container" aria-labelledby="titulo-pagina">
+            <h1 id="titulo-pagina">Contato</h1>
+            <p>Envie dúvidas, sugestões ou propostas de parceria.</p>
+
+            <form id="form-contato" novalidate>
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text" autocomplete="name">
+                <span class="erro" id="erro-nome"></span>
+
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" autocomplete="email">
+                <span class="erro" id="erro-email"></span>
+
+                <label for="assunto">Assunto</label>
+                <input id="assunto" name="assunto" type="text">
+                <span class="erro" id="erro-assunto"></span>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+                <span class="erro" id="erro-mensagem"></span>
+
+                <p>
+                    <button class="botao" type="submit">Enviar mensagem</button>
+                </p>
+                <p id="aviso-form" class="aviso" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <div class="container">
+            <p>Em emergência, ligue 199 (Defesa Civil) ou 193 (Bombeiros).</p>
+            <p class="copyright">&copy; 2026 - Alerta Bairro - Global Solution 2026/2 - CitizenTech FIAP. Protótipo acadêmico: os pontos de risco do mapa são fictícios.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
