@@ -18,7 +18,11 @@ README.md
 ## Autores
 | Nome completo | RM | Turma | GitHub | LinkedIn |
 |---|---|---|---|---|
-| João Justino | 574645 | 1TDSPA | https://github.com/justinojoao07 | https://www.linkedin.com/in/joão-justino-profile
+| João Justino | 574645 | 1TDSPA | https://github.com/justinojoao07 | https://www.linkedin.com/joão-justino-profile|
+| Matheus Setra da SIlva | 575352 | 1TDSPA | https://github.com/ogsxtra | https://www.linkedin.com/in/matheus-setra-b24444360/|
+| Cauã Sena | 574718 | 1TDSPA | https://github.com/Cauasena13 | https://www.linkedin.com/in/cau%C3%A3-sena/|
+| Matheus Lira Castro | 575094 | 1TDSPA | https://github.com/MatheusLira-31 | https://www.linkedin.com/in/matheusliracastro/|
+
 
 ## Imagens do projeto
 ![Logo](assets/img/logo.svg)
