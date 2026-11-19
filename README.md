@@ -22,6 +22,7 @@ README.md
 | Matheus Setra da SIlva | 575352 | 1TDSPA | https://github.com/ogsxtra | https://www.linkedin.com/in/matheus-setra-b24444360/|
 | Cauã Sena | 574718 | 1TDSPA | https://github.com/Cauasena13 | https://www.linkedin.com/in/cau%C3%A3-sena/|
 | Matheus Lira Castro | 575094 | 1TDSPA | https://github.com/MatheusLira-31 | https://www.linkedin.com/in/matheusliracastro/|
+| Enzo de Carvalho Pescuma | 576536 | 1TDSPA | https://github.com/enzxcp | https://www.linkedin.com/in/enzo-de-carvalho-pescuma-29510a431/|
 
 
 ## Imagens do projeto
